@@ -5,51 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <head>
 <body>
-    <div>
-        <header>
-            <img src="Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo">
-        </header>
-        <main>
+    <header>
+        <div class="header__logo">
+            <img src="Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo">
+        </div>
+        <div class="header__location">
+            <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
-            <h1>Réservez le menu qui vous convient</h1>
+        </div>
+    </header>
+    <main>
+        <div class="main__intro">
+            <h1 class="main__intro--titre">Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="main__intro--button">Explorer nos restaurants</button>
+        </div>
+        <section>
+            <h1>Fonctionnement</h1>
             <div>
-                <h2>Réservez le menu qui vous convient</h2>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button>explorer nos restaurants</button>
-            </div>
-            <section>
-                <h1>Fonctionnement</h1>
+                <p>1</p>
                 <div>
-                    <p>1</p>
-                    <div>
-                        <p>Choisissez un restaurant</p>
-                    </div>
+                    <p>Choisissez un restaurant</p>
                 </div>
-            </section>
-            <section>
-                <h2>Restaurants</h2>
-                <article>
-                    <a href="">
-                        <img src="Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                        <div>
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                    </a>
-                </article>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 </body>
 <footer>
     <img src="Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg">
-    <a>Proposer un restaurant</a>
-    <a>Devenir partenaire</a>
-    <a>Mention légales</a>
-    <a>Contact</a>
+    <div class="footer__link">
+        <a><i class="fa-solid fa-utensils"></i>  Proposer un restaurant</a>
+        <a><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+        <a>Mention légales</a>
+        <a>Contact</a>
+    </div>
 </footer>
