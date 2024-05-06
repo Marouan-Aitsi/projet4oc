@@ -1,0 +1,7 @@
+{
+    "name": "projet 4",
+    "author": "AITSI Marouan",
+    "scripts": {
+        "compiler": "node-sass --watch style.scss dist/style.css"
+    }
+}
