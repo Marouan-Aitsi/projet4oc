@@ -8,6 +8,7 @@ a {
 body {
   margin: 0px; }
 
+/* Page d'accueil */
 header {
   display: flex;
   justify-content: center;
@@ -24,19 +25,23 @@ header {
     display: flex;
     justify-content: center;
     background-color: #EAEAEA;
-    align-items: center; }
+    align-items: center;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.15); }
     header .header__location i {
       padding-bottom: 4px; }
     header .header__location input[type="text"] {
       background-color: #EAEAEA;
       height: 50px;
-      border: none; }
+      border: none;
+      text-align: center;
+      box-shadow: inset 0px 9px 5px -7px rgba(0, 0, 0, 0.15); }
     header .header__location input[type="text"]::placeholder {
       text-align: center;
       font-size: 19px; }
-    header .header__location input[type="text"]::before {
-      content: "\f3c5"; }
-  header img {
+    header .header__location input[type="text"]:focus {
+      outline: none;
+      border: none; }
+  header header img {
     width: 160px;
     display: flex; }
 
@@ -46,7 +51,8 @@ main .main__intro {
   align-items: center;
   text-align: center;
   padding: 25px 25px 45px 25px;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15); }
   main .main__intro .main__intro--titre {
     width: 275px;
     font-weight: bold;
@@ -62,7 +68,8 @@ main .main__intro {
     border: none;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 20px; }
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); }
 
 main .main__fonctionnement {
   padding: 25px 0px 50px 10px; }
@@ -119,6 +126,58 @@ main .main__restaurant {
       main .main__restaurant .main__restaurant--card .restaurant-text p {
         margin: 0px 0px 20px 0px; }
 
+/* page la palette du gout*/
+.header-LPG {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .header-LPG .header__logo {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 5px 0px 10px gray;
+    display: flex;
+    justify-content: center; }
+  .header-LPG i {
+    position: absolute;
+    position: absolute;
+    padding-right: 310px;
+    font-size: 20px; }
+
+.page_1 img {
+  width: 100%;
+  object-fit: cover; }
+
+.page_1 .carte {
+  border-radius: 20px 20px 0px 0px;
+  background-color: #f6f6f6;
+  padding: 15px; }
+  .page_1 .carte h1 {
+    font-family: 'Shrikhand', sans-serif; }
+  .page_1 .carte .carte__menu h2 {
+    font-weight: 300;
+    font-size: 15px; }
+  .page_1 .carte .carte__menu .carte__menu--card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 15px 0px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); }
+    .page_1 .carte .carte__menu .carte__menu--card h3 {
+      margin-top: 12px;
+      margin-bottom: 0px;
+      font-size: 17px; }
+    .page_1 .carte .carte__menu .carte__menu--card p {
+      margin-top: 5px;
+      font-size: 14px; }
+    .page_1 .carte .carte__menu .carte__menu--card .prix {
+      display: flex;
+      justify-content: flex-end;
+      align-items: end;
+      margin-top: -35px;
+      font-weight: 600;
+      font-size: 15px; }
+
 footer {
   background-color: #353535;
   display: flex;
@@ -138,6 +197,3 @@ footer {
   footer i {
     padding: 0px 5px 0px 5px;
     font-size: 13px; }
-
-.container {
-  color: #353535; }

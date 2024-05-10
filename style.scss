@@ -1,169 +1,238 @@
 * {
-    font-family: 'Roboto', sans-serif;
-}
-a{
-    color: inherit;
-    text-decoration: none;
-}
-body{
-    margin: 0px;
-}
-header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    .header__logo{
+    font-family: 'Roboto', sans-serif; }
+  
+a {
+color: inherit;
+text-decoration: none; }
+
+body {
+margin: 0px; }
+
+/* Page d'accueil */
+header {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+    .header__logo {
         width: 100%;
         padding: 20px 0px 20px 0px;
         box-shadow: 5px 0px 10px gray;
         display: flex;
         justify-content: center;
     }
-    .header__location{
+    .header__location {
         width: 100%;
         display: flex;
         justify-content: center;
         background-color: #EAEAEA;
         align-items: center;
-        i{
-            padding-bottom: 4px;
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.15);
+        i {
+        padding-bottom: 4px; }
+        input[type="text"] {
+        background-color: #EAEAEA;
+        height: 50px;
+        border: none; 
+        text-align: center;
+        box-shadow: inset 0px 9px 5px -7px rgba(0, 0, 0, 0.15)
         }
-        input[type="text"]{
-            background-color: #EAEAEA;
-            height: 50px;
+        input[type="text"]::placeholder {
+        text-align: center;
+        font-size: 19px; 
+        }
+        input[type="text"]:focus {
+            outline: none; 
             border: none;
         }
-        input[type="text"]::placeholder{
-            text-align: center;
-            font-size: 19px;
-        }
-        input[type="text"]::before{
-            content: "\f3c5";
-        }
     }
-    img{
+    header img {
         width: 160px;
-        display: flex;
+        display: flex; 
     }
 }
+
 main{
-    .main__intro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 25px 25px 45px 25px;
-        background-color: rgba(246, 246, 246, 1);
-        .main__intro--titre{
+    .main__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 25px 45px 25px;
+    background-color: #f6f6f6;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.15);
+        .main__intro--titre {
             width: 275px;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 24px; 
         }
-        p{
+        p {
             padding: 0px 20px 0px 20px;
-            color: rgba(53, 53, 53, 1);
+            color: #353535; 
         }
-        .main__intro--button{
-            background: linear-gradient(rgba(255, 121, 218, 1), rgba(147, 86, 220, 1));
-            color: rgba(255, 255, 255, 1);
+        .main__intro--button {
+            background: linear-gradient(#ff79da, #9356dc);
+            color: white;
             padding: 20px;
             border-radius: 30px;
             border: none;
             font-size: 16px;
             font-weight: 500;
             margin-top: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); 
         }
     }
-    .main__fonctionnement{
-        padding: 25px 0px 50px 10px;
-        .main__fonctionnement--titre{
-            padding-left: 10px;
+    .main__fonctionnement {
+    padding: 25px 0px 50px 10px; 
+        .main__fonctionnement--titre {
+            padding-left: 10px; 
         }
-        .main__fonctionnement--card{
+        .main__fonctionnement--card {
             width: 90%;
             padding-left: 20px;
-            padding-bottom: 3px;
-            .container{
-                background-color: rgba(246, 246, 246, 1);
-                padding: 25px;
-                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
-                border-radius: 20px;
-                i{
-                    padding: 0px 20px;
+            padding-bottom: 3px; 
+            .container {
+            background-color: #f6f6f6;
+            padding: 25px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px; 
+                i {
+                    padding: 0px 20px; 
+                    }
                 }
+            .number {
+            position: absolute;
+            margin-left: -11px;
+            background-color: #9356dc;
+            color: white;
+            padding: 7px;
+            border-radius: 50%;
+            height: 14px;
+            margin-top: 23px;
+            width: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px; 
             }
-            .number{
-                position: absolute;
-                margin-left: -11px;
-                background-color: rgba(147, 86, 220, 1);
-                color: white;
-                padding: 7px;
-                border-radius: 50%;
-                height: 14px;
-                margin-top: 23px;
-                width: 12px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 14px;
+        }
+    }    
+    .main__restaurant {
+    padding: 50px 20px;
+    background-color: #f6f6f6; 
+        .main__restaurant--card {
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        padding: 0px;
+            img {
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+            height: 190px;
+            object-fit: cover; 
+            }
+            .restaurant-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            margin-bottom: 5px;
+            font-size: 14px; 
+                h3 {
+                    margin: 10px 0px 5px 0px; 
+                }
+                p {
+                    margin: 0px 0px 20px 0px; 
+                }    
             }
         }
     }
-    .main__restaurant{
-       padding: 50px 20px;
-       background-color: rgba(246, 246, 246, 1);
-        .main__restaurant--card{
-            margin: 20px 0px 0px 0px;
+}
+/* page la palette du gout*/
+.header-LPG {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+        .header__logo {
             width: 100%;
-            background-color: white;
-            border-radius: 20px;
-            padding: 0px;
-            img{
-                width: 100%;
-                border-radius: 20px 20px 0px 0px;
-                height: 190px;
-                object-fit: cover;
+            padding: 20px 0px 20px 0px;
+            box-shadow: 5px 0px 10px gray;
+            display: flex;
+            justify-content: center;
+        }
+        i{
+            position: absolute;
+            position: absolute;
+            padding-right: 310px;
+            font-size: 20px;
+        }
+}
+.page_1{
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .carte{
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgba(246, 246, 246, 1);
+        padding: 15px;
+        h1{
+            font-family: 'Shrikhand', sans-serif;
+        }
+        .carte__menu{
+            h2{
+                font-weight: 300;
+                font-size: 15px;
             }
-            .restaurant-text{
-                display: flex;
-                flex-direction: column;
-                margin-left: 15px;
-                margin-bottom: 5px;
-                font-size: 14px;
+            .carte__menu--card{
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 20px;
+                padding: 5px 15px;
+                margin: 15px 0px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                 h3{
-                    margin: 10px 0px 5px 0px;
+                    margin-top: 12px;
+                    margin-bottom: 0px;
+                    font-size: 17px;
                 }
                 p{
-                    margin: 0px 0px 20px 0px;
+                    margin-top: 5px;
+                    font-size: 14px;
+
+                }
+                .prix{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: end;
+                    margin-top: -35px;
+                    font-weight: 600;
+                    font-size: 15px;
                 }
             }
         }
     }
 }
-footer{
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 25px;
-    img{
+footer {
+background-color: #353535;
+display: flex;
+flex-direction: column;
+color: white;
+padding: 25px;
+    img {
         width: 100px;
         filter: invert(100%);
-        padding-bottom: 20px;
+        padding-bottom: 20px; 
     }
-    .footer__link{
+    .footer__link {
         font-weight: 500;
         font-size: 16px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 10px; 
     }
-        i{
-            padding: 0px 5px 0px 5px;
-            font-size: 13px;
-        }
-    } 
-    .container{
-        color: #353535;
+    i {
+        padding: 0px 5px 0px 5px;
+        font-size: 13px; 
     }
+}
