@@ -149,34 +149,43 @@ main .main__restaurant {
   object-fit: cover; }
 
 .page_1 .carte {
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   background-color: #f6f6f6;
-  padding: 15px; }
+  padding: 15px;
+  margin-top: -55px;
+  z-index: 1;
+  position: relative; }
   .page_1 .carte h1 {
-    font-family: 'Shrikhand', sans-serif; }
-  .page_1 .carte .carte__menu h2 {
-    font-weight: 300;
-    font-size: 15px; }
-  .page_1 .carte .carte__menu .carte__menu--card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 15px;
-    margin: 15px 0px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); }
-    .page_1 .carte .carte__menu .carte__menu--card h3 {
-      margin-top: 12px;
-      margin-bottom: 0px;
-      font-size: 17px; }
-    .page_1 .carte .carte__menu .carte__menu--card p {
-      margin-top: 5px;
-      font-size: 14px; }
-    .page_1 .carte .carte__menu .carte__menu--card .prix {
-      display: flex;
-      justify-content: flex-end;
-      align-items: end;
-      margin-top: -35px;
-      font-weight: 600;
-      font-size: 15px; }
+    font-family: 'Shrikhand' , sans-serif;
+    font-weight: 400; }
+  .page_1 .carte .carte__menu {
+    padding-bottom: 10px; }
+    .page_1 .carte .carte__menu h2 {
+      font-weight: 300;
+      font-size: 15px;
+      border-bottom: 3px solid #99e2d0;
+      width: 40px;
+      padding-bottom: 2px; }
+    .page_1 .carte .carte__menu .carte__menu--card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 5px 15px;
+      margin: 15px 0px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); }
+      .page_1 .carte .carte__menu .carte__menu--card h3 {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        font-size: 17px; }
+      .page_1 .carte .carte__menu .carte__menu--card p {
+        margin-top: 5px;
+        font-size: 14px; }
+      .page_1 .carte .carte__menu .carte__menu--card .prix {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        margin-top: -35px;
+        font-weight: 600;
+        font-size: 15px; }
 
 footer {
   background-color: #353535;

@@ -174,16 +174,24 @@ main{
         object-fit: cover;
     }
     .carte{
-        border-radius: 20px 20px 0px 0px;
-        background-color: rgba(246, 246, 246, 1);
+        border-radius: 30px 30px 0px 0px;
+        background-color: #f6f6f6;
         padding: 15px;
+        margin-top: -55px;
+        z-index: 1;
+        position: relative;
         h1{
-            font-family: 'Shrikhand', sans-serif;
+            font-family: 'Shrikhand' , sans-serif;
+            font-weight: 400;
         }
         .carte__menu{
+            padding-bottom: 10px;
             h2{
                 font-weight: 300;
                 font-size: 15px;
+                border-bottom: 3px solid #99e2d0;
+                width: 40px;
+                padding-bottom: 2px;
             }
             .carte__menu--card{
                 background-color: rgba(255, 255, 255, 1);
