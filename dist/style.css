@@ -316,10 +316,10 @@ footer {
   .page_1 img {
     height: 500px; }
   .page_1 .carte {
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-left: 220px;
-    padding-right: 220px; }
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%; }
     .page_1 .carte h1 {
       text-align: center;
       padding: 20px 0px; } }
