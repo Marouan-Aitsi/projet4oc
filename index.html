@@ -13,6 +13,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="loader">
+        <div class="load">
+            <div class="load__bar load__bar--1"></div>
+            <div class="load__bar load__bar--2"></div>
+            <div class="load__bar load__bar--3"></div>
+            <div class="load__bar load__bar--4"></div>
+            <div class="load__bar load__bar--5"></div>
+        </div>
+    </div>
     <header>
         <div class="header__logo">
             <img src="Images_et_textes_Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo">
@@ -26,22 +35,33 @@
         <div class="main__intro">
             <h2 class="main__intro--titre">Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="main__intro--button">Explorer nos restaurants</button>
+            <button class="main__intro--button">Explorer nos restaurants
+                <div class="btn-hover"></div>
+            </button>
         </div>
         <section class="main__fonctionnement">
             <h1 class="main__fonctionnement--titre">Fonctionnement</h1>
             <div class="main__fonctionnement--menu">
                 <div class="main__fonctionnement--card">
                     <p class="number">1</p>
-                    <p class="container"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</p>
+                    <div class="container">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
                 </div>
                 <div class="main__fonctionnement--card">
                     <p class="number">2</p>
-                    <p class="container"><i class="fa-solid fa-list-ul"></i>Composez votre menu</p>
+                    <div class="container">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </div>
                 </div>
                 <div class="main__fonctionnement--card">
                     <p class="number">3</p>
-                    <p class="container"><i class="fa-solid fa-store"></i>Dégustez au restaurant</p>
+                    <div class="container">
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -53,7 +73,10 @@
                     <div class="restaurant-text">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
-                        <i class="fa-sharp fa-solid fa-heart"></i>
+                        <div class="anim-coeur">
+                            <i class="fa-regular fa-heart coeur-vide"></i>
+                            <i class="fa-solid fa-heart coeur-rempli"></i>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -63,6 +86,10 @@
                     <div class="restaurant-text">
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
+                        <div class="anim-coeur">
+                            <i class="fa-regular fa-heart coeur-vide"></i>
+                            <i class="fa-solid fa-heart coeur-rempli"></i>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -72,6 +99,10 @@
                     <div class="restaurant-text">
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
+                        <div class="anim-coeur">
+                            <i class="fa-regular fa-heart coeur-vide"></i>
+                            <i class="fa-solid fa-heart coeur-rempli"></i>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -81,6 +112,10 @@
                     <div class="restaurant-text">
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
+                        <div class="anim-coeur">
+                            <i class="fa-regular fa-heart coeur-vide"></i>
+                            <i class="fa-solid fa-heart coeur-rempli"></i>
+                        </div>
                     </div>
                 </a>
             </article>
