@@ -113,8 +113,6 @@ main .main__intro {
     padding: 0px 20px 0px 20px;
     color: #353535; }
   main .main__intro .main__intro--button {
-    position: relative;
-    z-index: 1;
     background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     color: white;
     padding: 20px;
@@ -125,19 +123,9 @@ main .main__intro {
     margin-top: 20px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     cursor: pointer; }
-    main .main__intro .main__intro--button:hover .btn-hover {
-      opacity: 1; }
-    main .main__intro .main__intro--button .btn-hover {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    main .main__intro .main__intro--button:hover {
       background: linear-gradient(0deg, #9356dc 0%, #ff79da 75%);
-      border-radius: 30px;
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms; }
+      box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.15); }
 
 main .main__fonctionnement {
   padding: 25px 35px 50px 10px; }
@@ -251,8 +239,6 @@ main .main__restaurant {
   flex-direction: column;
   align-items: center; }
   .page_1 .carte .carte__button {
-    position: relative;
-    z-index: 1;
     background: linear-gradient(#ff79da, #9356dc);
     color: white;
     padding: 20px 65px;
@@ -263,19 +249,9 @@ main .main__restaurant {
     margin: 25px 0px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     cursor: pointer; }
-    .page_1 .carte .carte__button:hover .btn-hover-carte {
-      opacity: 1; }
-    .page_1 .carte .carte__button .btn-hover-carte {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    .page_1 .carte .carte__button:hover {
       background: linear-gradient(0deg, #9356dc 0%, #ff79da 75%);
-      border-radius: 30px;
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms; }
+      box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.15); }
   .page_1 .carte h1 {
     font-family: 'Shrikhand' , sans-serif;
     font-weight: 400;
@@ -358,7 +334,7 @@ main .main__restaurant {
     opacity: 1; } }
 
 .animation__carte {
-  animation: animation-card 1s ease-in-out; }
+  animation: animation-card 1s ease-in-out both; }
 
 .animation__500ms {
   animation-delay: 0.5s; }
